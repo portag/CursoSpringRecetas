@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .overlay {
+            background-color: rgba(0,0,0,0.5);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 { font-size: 3em; text-shadow: 2px 2px 4px #000; }
+        p { font-size: 1.5em; margin-bottom: 1.5em; }
+        a.button {
+            background-color: #ff7043;
+            color: #fff;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a.button:hover { background-color: #ff5722; }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>¡Bienvenido a Recetas App!</h1>
+        <p>Descubre, crea y disfruta de tus recetas favoritas.</p>
+        <a href="/recetas" class="button">Ver recetas</a>
+        <a href="/recetas/nueva" class="button">Nueva receta</a>
+    </div>
+</body>
+</html>
