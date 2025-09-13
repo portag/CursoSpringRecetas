@@ -35,12 +35,34 @@
         a.button:hover { background-color: #ff5722; }
     </style>
 </head>
+
+<nav style="background-color: #ff7043; padding: 0.8em 2em;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-weight: bold; color: #fff; font-size: 1.2em;">
+            Recetas App
+        </div>
+        <div>
+            <a th:href="@{/recetas}" 
+               style="color: #fff; margin-right: 1.5em; text-decoration: none; font-weight: bold; padding: 0.3em 0.6em; border-radius: 4px;"
+               onmouseover="this.style.backgroundColor='#e65c3c';" 
+               onmouseout="this.style.backgroundColor='transparent';">
+                Ver recetas
+            </a>
+            <a th:href="@{/recetas/nueva}" 
+               style="color: #fff; text-decoration: none; font-weight: bold; padding: 0.3em 0.6em; border-radius: 4px;"
+               onmouseover="this.style.backgroundColor='#e65c3c';" 
+               onmouseout="this.style.backgroundColor='transparent';">
+                Nueva receta
+            </a>
+        </div>
+    </div>
+</nav>
+
+
 <body>
     <div class="overlay">
         <h1>¡Bienvenido a Recetas App!</h1>
         <p>Descubre, crea y disfruta de tus recetas favoritas.</p>
-        <a href="/recetas" class="button">Ver recetas</a>
-        <a href="/recetas/nueva" class="button">Nueva receta</a>
     </div>
 </body>
 </html>
